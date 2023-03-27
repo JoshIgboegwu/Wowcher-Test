@@ -62,10 +62,19 @@ body {
   text-align: right;
 }
 
-.product-list input {
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search > label {
+  flex-grow: 1;
+}
+
+.search > input {
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px;
-  margin-bottom: 5px;
   padding: 3px 8px;
   background-color: #eb008c;
   color: #ffffff;
@@ -73,6 +82,7 @@ body {
   border-radius: 4px;
   line-height: 24px;
   outline: none;
+  flex-grow: 4;
 }
 
 .loading-text {

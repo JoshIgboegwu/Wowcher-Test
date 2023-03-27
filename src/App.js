@@ -70,13 +70,18 @@ const App = () => {
   const renderContent = () => {
     return (
       <>
-        <label id="search-label">Search Products</label>
-        <input 
-          role="searchbox"
-          type="text" 
-          onChange={(e) => setFilter(e.target.value)}
-          aria-label="Search input for products"
-        />
+        <div
+          role="search"
+          className="search"
+        >
+          <label id="search-label">Search Products</label>
+          <input 
+            role="searchbox"
+            type="text" 
+            onChange={(e) => setFilter(e.target.value)}
+            aria-label="Search input for products"
+          />
+        </div>
         
         <table 
           role="table"
